@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12 занятие</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="boxes"></div>
+  <div class="boxes"></div>
+  <div class="boxes"></div>
+  <div class="boxes"></div>
+  <div class="boxes"></div>
+  <div class="boxes"></div>
+  <div class="boxes"></div>
+  <div class="boxes"></div>
+  <div class="boxes"></div>
+  <div class="boxes"></div>
+  <div class="boxes"></div>
+  <div class="boxes"></div>
+  <div class="boxes"></div>
+  <div class="boxes"></div>
+  <div class="boxes"></div>
+</div>
+<script>
+  window.addEventListener('click', e =>{
+    const red = Math.round(Math.random()*255);
+    const green = Math.round(Math.random()*255);
+    const blue = Math.round(Math.random()*255);
+
+    e.target.style.background = `rgb(${red},${green},${blue}`
+    setTimeout(() => {
+      e.target.style.background = "transparent"
+    },1000)
+  })
+</script>
+</body>
+</html>
